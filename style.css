@@ -1,9 +1,15 @@
 body {
   font-family: "Inconsolata", monospace;
   font-weight: 15;
-  background-color: #fdfbfa;
+  /* background-color: #fdfbfa; */
+  background-color: #ffffff;
 }
 
+h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px;
+}
 
 @keyframes apperaing {
     from {opacity: 0;}
@@ -22,11 +28,118 @@ body {
   animation-duration: 2s;
 }
 
-#bio {
+.section-text {
   width: 60%;
 }
 
 #logo {
   width: 15%;
   padding: 1%;
+}
+
+#atmosface {
+  width: 25%;
+  padding: 1%;
+}
+
+.line {
+  width:50%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  opacity: 0.8;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 20%;
+  padding-top: 20px;
+}
+
+.links-img {
+  width: 60%;
+  /* padding: 30px; */
+}
+
+a#home-btn {
+  color: #FFF;
+  text-decoration: none;
+  transition: 0.3s all ease;
+}
+a#home-btn:hover {
+  /* color: #B15947; */
+  color: #7f4034;
+}
+a#home-btn:focus {
+  text-decoration: none;
+}
+a#home-btn:active {
+  color: #FFF;
+}
+
+/* .button {
+  padding: 0px 20px;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background: #F4F5EE;
+  -webkit-font-smoothing: antialiased;
+}  */
+
+.flex {
+  /* min-height: 100vh; */
+  display: flex;
+  opacity: 0.8;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.bttn {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  position: relative;
+}
+.bttn:after {
+  transition: 0.3s all ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 3px;
+  border: 3px solid #7f4034;
+}
+.bttn:before {
+  content: "";
+  position: absolute;
+  border-radius: 3px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: #000000;
+  z-index: -1;
+}
+.bttn:hover:after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.bttn:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.bttn:active:before {
+  background-color: #a35243;
+}
+.bttn:active:after {
+  border-color: #a35243;
 }
