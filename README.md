@@ -1,3 +1,3 @@
 # omnivors.github.io
 
-Omnivors page
+[Omnivors page](https://omnivors.github.io)
