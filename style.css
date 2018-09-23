@@ -11,6 +11,24 @@ h1 {
   padding: 10px;
 }
 
+a:link {
+  color: #7f4034;
+}
+
+a:visited {
+  color: #7f4034;
+}
+
+a:hover {
+  color: #a35243;
+}
+
+li {
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+
 @keyframes apperaing {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -39,6 +57,16 @@ h1 {
 
 #atmosface {
   width: 25%;
+  padding: 1%;
+}
+
+#musichall {
+  width: 35%;
+  padding: 1%;
+}
+
+#anemos {
+  width: 35%;
   padding: 1%;
 }
 
