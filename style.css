@@ -1,6 +1,6 @@
 body {
   font-family: "Inconsolata", monospace;
-  font-weight: 15;
+  /* font-weight: 15; */
   /* background-color: #fdfbfa; */
   background-color: #ffffff;
 }
@@ -176,4 +176,33 @@ a#home-btn:active {
 }
 .bttn:active:after {
   border-color: #a35243;
+}
+
+@media screen and (max-width: 360px) {
+  #logo {
+    width:25%;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+  .links-container {
+    flex-direction: column;
+  }
+
+  .links-img {
+    width: 70px;
+    padding: 10px;
+  }
+
+  .section-text {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-text {
+    width: 70%;
+  }
 }
