@@ -3,28 +3,40 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet"> -->
     <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Omnivors!</title>
   </head>
   <body>
-    <div class="container">
+    <div class="logo-wrapper">
       <img src="images/logo.png" id="logo">
-      <h1>ABOUT</h1>
+      <div class="main-menu">
+        <h1 id="work" class="menu-item">WORK</h1>
+        <h1 class="menu-item menu-separator">|</h1>
+        <h1 id="about" class="menu-item central-item menu-active">ABOUT</h1>
+        <h1 class="menu-item menu-separator">|</h1>
+        <h1 id="contacts" class="menu-item">CONTACTS</h1>
+      </div>
+      <hr class="short">
+    </div>
+    <div id="container-about" class="container">
+      <h1>WHO WE ARE</h1>
       <div class="section-text" id="about">
-        <p> We're a four-headed collective based in Turin (Italy) and Delft (Netherlands).
-          The aim of the project is to design and develop interactive installations,
-          sculptures, videos, musical instruments and any sort of artistic work
-          that relies on electronics and digital technologies.
+        <p> We're a <b>four-headed collective</b> based in Turin (Italy) and Delft (Netherlands).
+          The aim of the project is to design and develop <b>interactive installations</b>,
+          sculptures, videos, musical instruments and any sort of <b>artistic work</b>
+          that relies on electronics and digital <b>technologies</b>.
           <br>
           <br>
-          We believe in sharing knowledge and expertiese, DIY practices and open
-          source. Furthermore, the interest in cultural and artistic projects goes
+          We believe in <b>sharing knowledge</b> and expertiese, <b>DIY practices and open
+          source</b>. Furthermore, the interest in cultural and artistic projects goes
           hand in hand with a passion for technical development and scientific research.
         </p>
       </div>
-      <img src="images/line-01.png" class="line">
+      <hr class="long">
       <h1>WHAT WE DO</h1>
       <div class="section-text" id="fields">
         Our common background in computer technology, electronics, music, art
@@ -32,37 +44,68 @@
         several fields. We eat everything!
         <br>
         <br>
-        <p> interaction design <b>//</b> digital media <b>//</b> sound design
-          <b>//</b> 3D modeling and printing <b>//</b> generative video <b>//</b>
-          web audio <b>//</b> VFX <b>//</b> VR and 360video
+        <p> interaction design <b><i>||</i></b> digital media <b><i>||</i></b> sound design
+          <b><i>||</i></b> 3D modeling and printing <b><i>||</i></b> generative video <b><i>||</i></b>
+          web audio <b><i>||</i></b> VFX <b><i>||</i></b> VR and 360video
         </p>
       </div>
-      <img src="images/line-01.png" class="line">
+      <hr class="long">
+    </div>
+    <div id="container-work" class="container">
       <h1>PROJECTS WE'VE BEEN WORKING ON</h1>
-      <div class="section-text" id="projects">
-        <p> Here's a list of projects we collaborated on:
-        </p>
-      <!-- </div>
-      <div> -->
-        <ul>
-          <li><a href="projects/atmosface.html">ATMOSFACE</a></li>
-          <li><a href="projects/musichall.html">MUSIC HALL</a></li>
-          <li><a href="projects/anemos.html">ÁNEMOS</a></li>
-          <li><a href="projects/hue.html">HUE</a></li>
-          <li><a href="https://dreamo-italy.github.io/dreamo//home/index_en/"
-            target="_blank">DREAMO</a></li>
-          <li><a href="https://goo.gl/yRUC1S"
-            target="_blank">SOSPHERE</a></li>
-        </ul>
+      <div class="portfolio-grid">
+        <div class="portfolio-row">
+          <div class="portfolio-item">
+            <a href="/projects/atmosface.html">
+              <img src="/images/atmosface-square.jpg" alt="atmosface">
+            </a>
+            <h3>ATMOSFACE</h3>
+          </div>
+          <div class="portfolio-item">
+            <a href="/projects/atmosface.html">
+              <img src="/images/musichall-square.jpg" alt="atmosface">
+            </a>
+            <h3>MUSIC HALL</h3>
+          </div>
+          <div class="portfolio-item">
+            <a href="/projects/atmosface.html">
+              <img src="/images/anemos-square.jpg" alt="anemos">
+            </a>
+            <h3>ÁNEMOS</h3>
+          </div>
+        </div>
+        <div class="portfolio-row">
+          <div class="portfolio-item">
+            <a href="/projects/anemos.html">
+              <img src="/images/hue-square.jpg" alt="hue">
+            </a>
+            <h3>HUE</h3>
+          </div>
+          <div class="portfolio-item">
+            <a href="https://dreamo-italy.github.io/dreamo//home/index_en/">
+              <img src="/images/dreamo-square.jpg" alt="dreamo">
+            </a>
+            <h3>DREAMO</h3>
+          </div>
+          <div class="portfolio-item">
+            <a href="https://goo.gl/yRUC1S">
+              <img src="/images/sosphere-square.png" alt="sosphere">
+            </a>
+            <h3>SOSPHERE</h3>
+          </div>
+        </div>
       </div>
-      <img src="images/line-01.png" class="line">
+      <hr class="long">
+    </div>
+    <div id="container-contacts" class="container">
       <h1>GET IN TOUCH</h1>
       <div class="section-text" id="contacts">
         <p> If you’re interested in one of our projects or in any other kind of
-          collaboration don’t hesitate to contact us! Drop us a line at <i>omnivorscollective@gmail.com</i>. <br> Also follow us
-          on Instagram <i>@omnivorscollective</i> to keep updated ;)
+          collaboration don’t hesitate to contact us! Drop us a line at <b><i>omnivorscollective@gmail.com</i></b>. <br>
+          Also follow us on Instagram <b><i>@omnivorscollective</i></b> to keep updated.
         </p>
       </div>
+      <hr class="long">
       <div class="links-container">
           <a href="mailto:omnivorscollective@gmail.com" target="_blank">
             <img src="/images/email-black.png" class="links-img">
@@ -71,6 +114,15 @@
             <img src="/images/insta-black.png" class="links-img">
           </a>
       </div>
+      <hr class="long">
     </div>
+    <footer>
+      <div class="footer-disclaimer">
+        <h3>&copy; 2019 Omnivors!</h3>
+        <h3>omnivorscollective@gmail.com</h3>
+      </div>
+    </footer>
+    <script src="/js/lib/jquery331.min.js" type="text/javascript"></script>
+    <script src="/js/index.js" type="text/javascript"></script>
   </body>
 </html>
