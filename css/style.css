@@ -475,4 +475,9 @@ footer .footer-disclaimer {
   .portfolio-row {
     flex-direction: column;
   }
+
+  iframe {
+    width: 90%;
+    height: auto;
+  }
 }
