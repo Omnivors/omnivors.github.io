@@ -42,35 +42,34 @@
       <hr class="long">
       <h2>TECHNICAL DETAILS</h2>
       <div class="section-text">
-        <p>Dreamo is currently developed as a <a href="https://processing.org/">Processing</a>.
-        sketch.<br>
+        <p>Dreamo is currently developed as a <a href="https://processing.org/">Processing</a> sketch.<br>
         Here follows a generic description of the classes of the program:
         <ul>
-          <li>Particle is the core visual-object class, from which a great number of different classes can be inherited (particles, stars, bubbles, squares...)</li>
-          <li>Scene includes an array of particles and manages their update and drawing on screen</li>
-          <li>Stage includes an array of scenes and manages the passage from one scene to another</li>
+          <li><b>Particle</b> is the core visual-object class, from which a great number of different classes can be inherited (particles, stars, bubbles, squares...)</li>
+          <li><b>Scene</b> includes an array of particles and manages their update and drawing on screen</li>
+          <li><b>Stage</b> includes an array of scenes and manages the passage from one scene to another</li>
         </ul>
         Audio Managing
         <ul>
-          <li>DSP is a static class containing digital signal processing methods</li>
-          <li>AudioManager manages the input stream properties</li>
-          <li>AudioProcessor manages the samples buffer and does common calculations (FFT, xcorr,...)</li>
-          <li>FeaturesExtractor is a superclass with utilities methods for features extractors</li>
-          <li>Actual features extractor are inherited from FeaturesExtractor and contain the actual computational methods (ex: Dynamic, Timbre...)</li>
-          <li>Audio Decisor calculates the "status" of audio and extract parameters useful for graphic generation</li>
+          <li><b>DSP</b> is a static class containing digital signal processing methods</li>
+          <li><b>AudioManager</b> manages the input stream properties</li>
+          <li><b>AudioProcessor</b> manages the samples buffer and does common calculations (FFT, xcorr,...)</li>
+          <li><b>FeaturesExtractor</b> is a superclass with utilities methods for features extractors</li>
+          <li>Actual features extractor are inherited from FeaturesExtractor and contain the actual computational methods (<b>Dynamic, Timbre, Rhythm</b>)</li>
+          <li><b>Audio Decisor</b> calculates the "status" of audio and extract parameters useful for graphic generation</li>
         </ul>
         <p>
         <img id="dreamo-blocks"src="/images/dreamo/interazioniaudiovideo.png" alt="dreamo engine blocks">
       </div>
       <hr class="long">
-      <h2>LINKS AND CONTACTS</h2>
+      <h2>DOWNLOAD LINK AND CONTACTS</h2>
       <div class="section-text">
         <p>
           Dreamo is an <b>open-source, work-in-progress project</b>. Feel free to <b>contact us</b> for any suggestion,
           if you want to be part of our team or if you have a graphic scene that you'd like
           to be integrated with our anudio-analysis engine.
           <ul>
-            <li><a href="https://github.com/Dreamo-Italy/Dreamo-engine-ProcessingIDE">GitHub Repository</a></li>
+            <li><a href="https://github.com/Dreamo-Italy/Dreamo-engine-ProcessingIDE">GitHub Repository</a> (download Dreamo here)</li>
             <li><a href="https://dreamo-italy.github.io/dreamo//home/index_en/">GitHub Page</a></li>
           </ul>
         </p>
