@@ -274,6 +274,14 @@ a#home-btn:active {
   max-width: 280px;
 }
 
+#dreamo-portfolio img {
+  max-width: 300px;
+}
+
+#dreamo-portfolio img:hover {
+  max-width: 400px;
+}
+
 .header {
   width: 100%;
   border-bottom: 1px solid #e5e5e5;
@@ -407,6 +415,19 @@ footer .footer-disclaimer {
   /* padding-right: 3em; */
   width: 40%;
   height: auto;
+}
+
+#dreamo-intro > h1 {
+  padding-top: 0;
+}
+
+#dreamo-intro > img {
+  width: 20%;
+}
+
+#dreamo-blocks {
+  margin-top: 3em;
+  width: 100%;
 }
 
 @media screen and (max-width: 360px) {

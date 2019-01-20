@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Dreamo Project</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="/">
+        <img id="header-logo" src="/images/logo-small.png" alt="omnivors">
+      </a>
+      <!-- <div class="header-buttons">
+        <a id="button-work" href="/index.html#work" class="menu-button">PROJECTS</a>
+        <a id="button-contacts" href="/index.html#contacts" class="menu-button">CONTACTS</a>
+      </div> -->
+    </div>
+    <div id="dreamo-intro" class="project-intro">
+      <img src="/images/dreamo/dreamo-logo.png" alt="dreamo logo">
+      <h1>Acoustical Driven Visual Generator</h1>
+    </div>
+    <div class="project-container" style="display:flex;">
+      <hr class="long">
+      <!-- <h1>ATMOSFACE</h1> -->
+      <!-- <img src="/images/atmosface.jpg" id="atmosface"> -->
+      <h2>WHAT IS DREAMO?</h2>
+      <div class="section-text">
+        <p>Dreamo is a project started in 2017 and has been developed with the contribution of:
+          <i>Giovanni Bologni, Francesco Cretti, Nicola Ruffino, Andrea Fiscella, Andrea Gambedotti.</i>
+        </p>
+        <hr class="short">
+        <p>The purpose of Dreamo is to generate a <b>graphical display influenced by
+          the mood of music</b>. On the basis of aesthetic and psychological principles,
+          Dreamo <b>extracts audio features</b> and use them to generates an abstract video
+          in <b>real time</b> by changing various graphical parameters.
+        </p>
+      </div>
+      <hr class="long">
+      <h2>TECHNICAL DETAILS</h2>
+      <div class="section-text">
+        <p>Dreamo is currently developed as a <a href="https://processing.org/">Processing</a>.
+        sketch.<br>
+        Here follows a generic description of the classes of the program:
+        <ul>
+          <li>Particle is the core visual-object class, from which a great number of different classes can be inherited (particles, stars, bubbles, squares...)</li>
+          <li>Scene includes an array of particles and manages their update and drawing on screen</li>
+          <li>Stage includes an array of scenes and manages the passage from one scene to another</li>
+        </ul>
+        Audio Managing
+        <ul>
+          <li>DSP is a static class containing digital signal processing methods</li>
+          <li>AudioManager manages the input stream properties</li>
+          <li>AudioProcessor manages the samples buffer and does common calculations (FFT, xcorr,...)</li>
+          <li>FeaturesExtractor is a superclass with utilities methods for features extractors</li>
+          <li>Actual features extractor are inherited from FeaturesExtractor and contain the actual computational methods (ex: Dynamic, Timbre...)</li>
+          <li>Audio Decisor calculates the "status" of audio and extract parameters useful for graphic generation</li>
+        </ul>
+        <p>
+        <img id="dreamo-blocks"src="/images/dreamo/interazioniaudiovideo.png" alt="dreamo engine blocks">
+      </div>
+      <hr class="long">
+      <h2>LINKS AND CONTACTS</h2>
+      <div class="section-text">
+        <p>
+          Dreamo is an <b>open-source, work-in-progress project</b>. Feel free to <b>contact us</b> for any suggestion,
+          if you want to be part of our team or if you have a graphic scene that you'd like
+          to be integrated with our anudio-analysis engine.
+          <ul>
+            <li><a href="https://github.com/Dreamo-Italy/Dreamo-engine-ProcessingIDE">GitHub Repository</a></li>
+            <li><a href="https://dreamo-italy.github.io/dreamo//home/index_en/">GitHub Page</a></li>
+          </ul>
+        </p>
+      </div>
+      <hr class="long">
+      <h2>SCREENSHOTS</h2>
+      <div id="dreamo-portfolio" class="portfolio-grid">
+        <div class="portfolio-row">
+          <div class="portfolio-item">
+            <img src="/images/dreamo/dreamo-screen12.png" alt="dreamo">
+          </div>
+          <div class="portfolio-item">
+            <img src="/images/dreamo/dreamo-screen7.png" alt="dreamo">
+          </div>
+          <div class="portfolio-item">
+            <img src="/images/dreamo/dreamo-screen11.png" alt="dreamo">
+          </div>
+        </div>
+        <div class="portfolio-row">
+          <div class="portfolio-item">
+            <img src="/images/dreamo/dreamo-screen1.png" alt="dreamo">
+          </div>
+          <div class="portfolio-item">
+            <img src="/images/dreamo/dreamo-screen2.png" alt="dreamo">
+          </div>
+          <div class="portfolio-item">
+            <img src="/images/dreamo/dreamo-screen3.png" alt="dreamo">
+          </div>
+        </div>
+        <div class="portfolio-row">
+          <div class="portfolio-item">
+            <img src="/images/dreamo/dreamo-screen4.png" alt="dreamo">
+          </div>
+          <div class="portfolio-item">
+            <img src="/images/dreamo/dreamo-screen5.png" alt="dreamo">
+          </div>
+          <div class="portfolio-item">
+            <img src="/images/dreamo/dreamo-screen13.png" alt="dreamo">
+          </div>
+        </div>
+      </div>
+      <hr class="long">
+      <h2>VIDEO</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/GWutFgVyPbs"
+      frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+      picture-in-picture" allowfullscreen></iframe>
+      <hr class="long">
+      <div>
+        <a href="/index.html">HOME</a>
+      </div>
+      <hr class="long">
+    </div>
+    <!-- <a href="https://drive.google.com/open?id=1rCCPuX4h_IzFf829tzfO7Z58jpmSY9Ze0-6WhXmvPTM">DOC</a> |
+    <a href="https://github.com/Omnivors/Atmosface">CODE</a> -->
+    <footer>
+      <div class="footer-disclaimer">
+        <h3>&copy; 2019 Omnivors!</h3>
+        <h3>omnivorscollective@gmail.com</h3>
+      </div>
+    </footer>
+    <script src="/js/lib/jquery331.min.js" type="text/javascript"></script>
+    <script src="/js/index.js" type="text/javascript"></script>
+  </body>
+</html>
