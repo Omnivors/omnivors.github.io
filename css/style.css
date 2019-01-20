@@ -159,6 +159,7 @@ li {
 #logo {
   width: 15%;
   padding: 1%;
+  cursor: pointer;
 }
 
 #atmosface {
@@ -302,7 +303,15 @@ a#home-btn:active {
 }
 
 .header-buttons {
-  padding-right: 30px;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all .5s;
+  font-size: 2em !important;
+  /* padding-right: 30px; */
+}
+
+.header-buttons:hover {
+  opacity: 0.5;
 }
 
 .menu-button {
@@ -312,6 +321,11 @@ a#home-btn:active {
   padding: 1em;
   opacity: 1;
   transition: all .5s;
+}
+
+.menu-button a {
+  text-decoration: none;
+  color: black !important;
 }
 
 .menu-button:hover {
