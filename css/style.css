@@ -140,6 +140,7 @@ li {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 5px;
   padding: 10px;
+  text-align: center;
 }
 
 #container-about {
@@ -439,12 +440,48 @@ footer .footer-disclaimer {
   width: 20%;
 }
 
+#atmosface-intro > img {
+  width: 50%
+}
+
 #dreamo-blocks {
   margin-top: 3em;
   width: 100%;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 768px) {
+  .main-menu {
+    flex-direction: column;
+  }
+
+  .menu-separator {
+    display: none;
+  }
+
+  .portfolio-row {
+    flex-direction: column;
+  }
+
+  .section-text {
+    width: 70%;
+  }
+
+  iframe {
+    width: 90%;
+    height: auto;
+  }
+
+  #container-work {
+    text-align: center;
+  }
+
+  #container-contacts {
+    word-break: break-all;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
   #logo {
     width:25%;
   }
@@ -468,30 +505,5 @@ footer .footer-disclaimer {
 
   a {
     font-size: 0.9em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .section-text {
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .main-menu {
-    flex-direction: column;
-  }
-
-  .menu-separator {
-    display: none;
-  }
-
-  .portfolio-row {
-    flex-direction: column;
-  }
-
-  iframe {
-    width: 90%;
-    height: auto;
   }
 }
