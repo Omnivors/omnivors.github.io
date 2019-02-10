@@ -46,6 +46,10 @@ hr.short {
   margin: 50px;
 }
 
+hr.m-sides-auto {
+  margin: 30px auto;
+}
+
 .logo-wrapper {
   display: flex;
   flex-direction: column;
@@ -149,7 +153,8 @@ li {
 
 .section-text {
   width: 50%;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
+  line-height: 25px;
   text-align: justify;
 }
 
