@@ -142,8 +142,8 @@ li {
 }
 
 .project-container h2 {
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 5px;
+  font-family: 'IBM plex sans condensed', sans-serif;
+  letter-spacing: 0px;
   padding: 10px;
   text-align: center;
 }
