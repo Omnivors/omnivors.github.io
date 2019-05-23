@@ -21,7 +21,8 @@
 
 body {
   /* font-family: "Inconsolata", monospace;*/
-  font-family: 'Playfair Display', serif;
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'IBM plex mono', serif;
   /* font-family: 'Poppins', sans-serif; */
   background-color: #ffffff;
   margin: 0;
@@ -29,9 +30,9 @@ body {
 }
 
 h1 {
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 5px;
-  font-size: 1.2em;
+  font-family: 'IBM plex sans condensed', sans-serif;
+  letter-spacing: 0px;
+  font-size: 2em;
   font-weight: bold;
   padding: 10px;
 }
@@ -82,13 +83,13 @@ hr.m-sides-auto {
 }
 
 :not(.menu-active):not(.menu-separator).menu-item:hover {
-  color: var(--red1);
+  color: var(--gray4);
   /* opacity: 0.6; */
   /* padding-bottom: 1em; */
 }
 
 .menu-active {
-  color: var(--red1);
+  color: var(--gray4);
   font-size: 1.5em;
   /* padding-bottom: 1em; */
   /* text-decoration: underline; */
